@@ -108,7 +108,8 @@ in the following format:
             {"antenna_i": 1, "antenna_j": 3, "angle_diffs": [..., ..., ...]},
             ...
         ]
-    }
+    },
+    ...
 ]
 """
 if __name__ == '__main__':
