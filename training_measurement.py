@@ -22,7 +22,7 @@ if not _DRY_RUN:
 
 
 """
-This function is expected to return an array of N data arrays where N = ANTENNAS_COUNT
+This function is expected to return the array of N data arrays where N = ANTENNAS_COUNT
 """
 def get_data_from_antennas():
     if _DRY_RUN:
@@ -117,7 +117,7 @@ if __name__ == '__main__':
     for angle in range(MIN_ANGLE, MAX_ANGLE, ANGLE_STEP):
         if angle > MIN_ANGLE:
             print('\n')
-        input('=== Please place the source at angle = {} degree(s) and press Enter when ready'.format(angle))
+        input('=== Please place the transmitter at angle = {} degree(s) and press Enter when ready'.format(angle))
 
         measurements = do_measurement_series()
         data.append({
